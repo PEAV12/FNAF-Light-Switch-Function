@@ -1,2 +1,3 @@
 # FNAF-Light-Switch-Page
-hello! testing :D
+
+This project is for academic purposes only.
