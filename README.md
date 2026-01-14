@@ -1,2 +1,2 @@
-# FNAF-Light-Switch-Function
-This is an assignment for Platform Technologies
+# FNAF-Light-Switch-Page
+hello! testing :D

@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ComicRelief-Bold;
+    src: url(Fonts/ComicRelief-Bold.ttf);
+}
+
+p {
+    font-family: Montserrat;
+}
+
+h5 {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.sticky-top {
+    background-color: #ebebeb;
+    border-bottom: 3px solid #cfcfcf;
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #000000 !important;
+    font-size: 30px !important;
+    font-family: Montserrat;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-title {
+    background-color: #181818;
+    color: whitesmoke;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%; 
+    height: auto;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#lightImage {
+    opacity: 1;
+    z-index: 1;
+}
+
+#darkImage {
+    opacity: 0;
+    z-index: 2;
+}
+
+
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 40%;
+    color: white;
+}
+
+.overlay-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.overlay-subtitle {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.overlay-title .overlay-subtitle {
+    transition: color 0.3s ease;
+}
+
+.button {
+    display: inline-block;
+    padding: 30px 80px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #3B1A5A;
+    border: none;
+    border-radius: 36px;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #6A1B9A;
+}
+
+.button:active {
+    background-color: #3B1A5A;
+    box-shadow: inset 0 10px rgb(50, 14, 73);
+}
+
+@media (max-width: 768px) {
+    .overlay-content {
+        left: 5%;
+        max-width: 80%;
+        gap: 15px;
+    }
+
+    .overlay-title {
+        font-size: 20px;
+    }
+
+    .overlay-subtitle {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 28px;
+        padding: 20px 50px;
+    }
+}
+
+.card {
+    background-color: #f1f1f1;
+    
+}
